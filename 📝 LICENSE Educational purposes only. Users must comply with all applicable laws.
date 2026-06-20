@@ -1,0 +1,45 @@
+---
+
+## 🚀 QUICK START — ONE COPY-PASTE FOR TERMINAL
+
+```bash
+# Create project
+mkdir ryan-brute-force-suite && cd ryan-brute-force-suite
+
+# Create requirements
+cat > requirements.txt << 'EOF'
+requests==2.31.0
+colorama==0.4.6
+beautifulsoup4==4.12.3
+urllib3==2.0.7
+certifi==2024.7.4
+fake_useragent==1.5.1
+EOF
+
+# Create sample passwords
+cat > passwords.txt << 'EOF'
+Password1
+Test1234!
+ryan2025
+letmein
+admin123
+Welcome1
+Summer2025
+instagram1
+Facebook2025
+Github123!
+EOF
+
+# Create the full python tool
+# (paste the FULL ryan_suite.py content from above here)
+# Save as ryan_suite.py
+
+# Install
+pip3 install -r requirements.txt
+
+# Fix SSL if needed
+export SSL_CERT_FILE=$(python3 -m certifi)
+export REQUESTS_CA_BUNDLE=$(python3 -m certifi)
+
+# Run
+python3 ryan_suite.py
